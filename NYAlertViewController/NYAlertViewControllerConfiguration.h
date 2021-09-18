@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "NYAlertActionConfiguration.h"
 #import "NYAlertViewControllerTransitionStyle.h"
+#import "NYAlertViewControllerContentViewPosition.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
  @discussion The default value is NYAlertViewControllerTransitionStyleSlideFromTop.
  */
 @property (nonatomic) NYAlertViewControllerTransitionStyle transitionStyle;
+
+
+/**
+ The position to place the contentView, either on top of the (title+message) or below it
+ */
+@property (nonatomic) NYAlertViewControllerContentViewPosition contentViewPosition;
 
 /**
  A Boolean value that determines whether the user can tap on the dimmed background surrounding the presented alert view to dismiss the alert view controller without any action handlers being executed.

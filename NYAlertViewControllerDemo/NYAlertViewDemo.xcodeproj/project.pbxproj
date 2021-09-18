@@ -75,6 +75,7 @@
 		0EF9AD8E1B5B1785000C7F1D /* NYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertView.m; sourceTree = "<group>"; };
 		0EF9AD8F1B5B1785000C7F1D /* NYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYAlertViewController.h; sourceTree = "<group>"; };
 		0EF9AD901B5B1785000C7F1D /* NYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYAlertViewController.m; sourceTree = "<group>"; };
+		BEEB3D5F26F62A1400FA3716 /* NYAlertViewControllerContentViewPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYAlertViewControllerContentViewPosition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +181,7 @@
 		0EF9AD8A1B5B1785000C7F1D /* NYAlertViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BEEB3D5F26F62A1400FA3716 /* NYAlertViewControllerContentViewPosition.h */,
 				088768AD215726E3004F427E /* NYAlertViewControllerTransitionStyle.h */,
 				0EF9AD8F1B5B1785000C7F1D /* NYAlertViewController.h */,
 				0EF9AD901B5B1785000C7F1D /* NYAlertViewController.m */,
@@ -257,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

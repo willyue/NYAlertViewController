@@ -153,7 +153,15 @@
                                                                                          metrics:nil
                                                                                            views:NSDictionaryOfVariableBindings(_actionButtonContainerView)]];
         
-        [self.alertBackgroundView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_contentViewContainerView(0@250)]-[_titleLabel]-2-[_messageTextView][_textFieldContainerView(0@250)]-8-[_actionButtonContainerView]|"
+        
+        NSString *layoutFormat = @"V:|[_contentViewContainerView(0@250)]-20-[_titleLabel]-10-[_messageTextView][_textFieldContainerView(0@250)]-20-[_actionButtonContainerView]|";
+        
+        if(self.configuration.contentViewPosition == NYAlertViewControllerContentViewPositionBottom) {
+            layoutFormat = @"V:|-15-[_titleLabel][_messageTextView][_contentViewContainerView(0@250)][_textFieldContainerView(0@250)]-20-[_actionButtonContainerView]|";
+        }
+        
+        
+        [self.alertBackgroundView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat: layoutFormat
                                                                                          options:0
                                                                                          metrics:nil
                                                                                            views:NSDictionaryOfVariableBindings(_titleLabel,
